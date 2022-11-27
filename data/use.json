@@ -8,12 +8,12 @@
       {
         "name": "Hung",
         "taikhoan": "hung",
-        "matkhau": 1
+        "matkhau": 123
       },
       {
         "name": "Duc",
-        "taikhoan": "duc",
-        "matkhau": 1
+        "taikhoan": "ducdi",
+        "matkhau": 12
       }
     ]
   }
