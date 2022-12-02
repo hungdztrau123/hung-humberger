@@ -10,6 +10,12 @@ import {
 import DrinkItemHorizontal from "../../components/DrinkItemHorizontal";
 import MainInput from "../../components/MainInput";
 import drinkData from "../../data/drinks.json";
+import comboData from "../../data/combo.json";
+import nuocData from "../../data/nuoc.json";
+import kemData from "../../data/kem.json";
+
+
+
 export default function SearchScreen({ navigation }) {
   const [textSearch, settextSearch] = useState("");
   const categories = [
@@ -17,11 +23,22 @@ export default function SearchScreen({ navigation }) {
     "BURGER BÒ PHOMAI SỐ BBQ",
     "BURGER GÀ NƯỚNG",
     
+    
   ];
   const renderResult = () => {
     const data = drinkData.filter((value) =>
       value.name.toLocaleLowerCase().includes(textSearch.toLocaleLowerCase())
     );
+    const data1 = comboData.filter((value) =>
+    value.name.toLocaleLowerCase().includes(textSearch.toLocaleLowerCase())
+  );
+  const data2 = nuocData.filter((value) =>
+    value.name.toLocaleLowerCase().includes(textSearch.toLocaleLowerCase())
+  );
+
+  const data3 = kemData.filter((value) =>
+  value.name.toLocaleLowerCase().includes(textSearch.toLocaleLowerCase())
+);
     const renderItem = ({ item, index }) => (
       <DrinkItemHorizontal item={item} navigation={navigation} />
     );
@@ -35,7 +52,28 @@ export default function SearchScreen({ navigation }) {
           keyExtractor={(item, index) => item + index}
           renderItem={renderItem}
         />
+
+        <FlatList
+          data={data1}
+          keyExtractor={(item, index) => item + index}
+          renderItem={renderItem}
+        />
+
+        <FlatList
+          data={data2}
+          keyExtractor={(item, index) => item + index}
+          renderItem={renderItem}
+        />
+
+        <FlatList
+          data={data3}
+          keyExtractor={(item, index) => item + index}
+          renderItem={renderItem}
+        />
       </View>
+
+      
+      
     );
   };
   return (

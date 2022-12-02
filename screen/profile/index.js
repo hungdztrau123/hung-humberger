@@ -37,7 +37,7 @@ export default function ProfileScreen({ navigation }) {
             width: 120,
             borderRadius: 100,
           }}
-          source={require('../../assets/avt.jpg')}
+          source={require('../../assets/ggg-min.jpg')}
         />
         <Text
           style={{

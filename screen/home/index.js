@@ -32,7 +32,10 @@ export default function HomeScreen({ navigation }) {
     >
       <Text style={{ marginTop: 8, fontSize: 15,color:"black" , fontWeight:"bold", flexDirection: 'row',width:"100%",alignItems:'center',  }}>{`Hello, ${
         user && user.name
-      } !`}</Text>
+      } !`}
+       
+      </Text>
+     
       <View
         style={{
           backgroundColor: 'gold',
