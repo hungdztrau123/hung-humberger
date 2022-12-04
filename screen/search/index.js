@@ -20,7 +20,7 @@ export default function SearchScreen({ navigation }) {
   const [textSearch, settextSearch] = useState("");
   const categories = [
     "BURGER THAN TRE",
-    "BURGER BÒ PHOMAI SỐ BBQ",
+    "BURGER BÒ PHOMAI SỐT BBQ",
     "BURGER GÀ NƯỚNG",
     
     

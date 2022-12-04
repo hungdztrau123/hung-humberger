@@ -52,7 +52,7 @@ export default function ProfileScreen({ navigation }) {
             fontSize: 12,
           }}
         >
-          {user && user.email}
+          {user && user.taikhoan}
         </Text>
         <View
           style={{
