@@ -31,6 +31,7 @@ export default function ProfileScreen({ navigation }) {
       }}
     >
       <View style={{ flex: 1, alignItems: "center" }}>
+      <View style={{ width: "100%", height: 200, display:"flex", alignItems:"center",backgroundColor:"orange", justifyContent:"center",borderTopLeftRadius:20,borderTopRightRadius: 20,}}>
         <Image
           style={{
             height: 120,
@@ -39,6 +40,7 @@ export default function ProfileScreen({ navigation }) {
           }}
           source={require('../../assets/ggg-min.jpg')}
         />
+        
         <Text
           style={{
             fontSize: 24,
@@ -54,6 +56,7 @@ export default function ProfileScreen({ navigation }) {
         >
           {user && user.taikhoan}
         </Text>
+        </View>
         <View
           style={{
             flexDirection: "row",
